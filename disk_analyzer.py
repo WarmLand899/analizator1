@@ -95,9 +95,7 @@ def hexdump_with_ascii(data, prefix="BOOT"):
 
         print(f"{prefix} 0x{offset:04X}:  {hex_part}  |{ascii_part}|")
 
-# ---------------------------
-#           MAIN
-# ---------------------------
+#          MAIN
 def main():
     if len(sys.argv) != 2:
         print("Использование:\n  python3 mbr_full.py disk.img")
@@ -111,9 +109,10 @@ def main():
     partitions = analyze_mbr(mbr)
     print_partitions(partitions)
 
-    # HEX-дамп без ASCII
+    # HEX-дамп 
     hexdump_with_ascii(mbr)
 
 
 if __name__ == "__main__":
     main()
+
