@@ -1,7 +1,6 @@
-Руководство по использованию python-скрипта disk-analyzer для анализа дампа диска.
+Руководство по использованию python-скрипта disk-analyzer для анализа дампа диска на Linux.
 Требования:
    Python 3.7+
-   Linux / macOS / Windows (терминал с ANSI‑цветами)
 1. Запустить терминал.
 2. Установить пакеты git командой apt install git, если ещё не установлены.
 3. Склонировать репозиторий командой git clone https://github.com/WarmLand899/disk-analyzer.git
